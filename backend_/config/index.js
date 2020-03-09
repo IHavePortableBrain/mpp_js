@@ -1,6 +1,10 @@
 const express = require('express');
 const parser = require('body-parser');
 const mongoose = require('mongoose');
+const multer = require('multer');
+const path = require('path');
+const file = require('fs');
+const morgan = require('morgan');
 const { check, body, validationResult } = require('express-validator');
 require('dotenv').config();
 
@@ -15,7 +19,11 @@ module.exports = {
     parser,
     check,
     body,
+    file,
+    path,
+    multer,
     validationResult,
+    morgan,
     mongoose,
     DB_NAME,
     DB_PORT
