@@ -137,7 +137,7 @@ module.exports = {
         const POST_PER_PAGE = 2;
         const currentPage = page || 1;
         const count = await Post.find().countDocuments();
-        if (count < 1) {
+        if (count < 0) {
             const error = new Error('no post found');
             error.statusCode = 404;
             throw error;
