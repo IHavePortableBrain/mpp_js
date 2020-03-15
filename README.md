@@ -1,4 +1,3 @@
-#Simple Post App in React
-#MERN
+#Post App in React
 #JWT
-#REST-API => GRAPHQL
+#GRAPHQL
